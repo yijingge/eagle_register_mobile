@@ -1,0 +1,39 @@
+html,body{
+    background-color: #fff;
+    font-family: PingFang-SC-Medium;
+    font-weight: normal;
+}
+.container{
+    width: 13.6rem;
+    margin: 0 auto;
+    padding-bottom: 1.6rem;
+}
+.titleTop{
+    display: flex;
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+}
+.userAgreementTitle{
+    width: 7.94rem;
+    margin: 0 auto;
+    font-size: 0.72rem;
+    color: #333333;
+    /*margin-bottom: 0.4rem;*/
+    /*margin-top: 0.4rem;*/
+}
+.has-indent{
+    font-size: 0.52rem;
+    color: #333;
+    line-height: 0.92rem;
+}
+section p{
+    font-size: 0.52rem;
+    color: #333;
+    line-height: 0.92rem;
+}
+.header{
+    font-size: 0.64rem;
+    line-height: 1.92rem;
+    margin-top: 0.4rem;
+    font-weight: 600;
+}

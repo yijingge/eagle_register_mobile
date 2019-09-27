@@ -5,17 +5,138 @@
   <meta name="keywords" content="悠行旅游,定制,trip,tour,travel,tourism">
   <meta name="description" content="这是一个关于旅游服务的网站">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta-data android:name="android.max_aspect" android:value="2.1"/>
   <meta name="format-detection" content="telephone=yes"/>
   <link rel="stylesheet" href="../css/mui.min.css">
   <link rel="stylesheet" href="../css/init.css">
   <link rel="stylesheet" href="../css/index.css">
-  <title>悠行定制旅游</title>
-  <link rel="shortcut icon" href="../imgs/logo.ico" type="image/x-icon" sizes="16x16">
+  <title>飞鹰云分销</title>
+  <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon" sizes="16x16">
 </head>
 <body>
-<div>ffff</div>
+<div class="container">
+  <!--tab栏-->
+  <div class="tabTop">
+    <img src="../images/banner.jpg" class="imgStyle">
+    <p>全品类旅游资源一站式采购平台</p>
+    <div class="registerTextStyle">
+      <span class="spanLeft selected" data-type="distributor">分销商注册</span>
+      <span class="borderStyle">|</span>
+      <span class="spanRight" data-type="supplier">供应商注册</span>
+    </div>
+  </div>
+
+  <!--注册-->
+  <div class="customFrame">
+    <!--分销商-->
+    <div class="distributor">
+      <div class="mui-input-row">
+        <span class="titleText">手机号</span>
+        <input type="text" class="inputStyle phoneInput" placeholder="请输入手机号码" oninput="phoneInput()">
+      </div>
+      <div class="mui-input-row">
+        <span class="titleText">短信验证码</span>
+        <div class="verifyCodeBox">
+          <input type="text" class="inputStyle distributorVerifyCodeInput" placeholder="请输入短信验证码" oninput="distributorVerifyCodeInput()">
+          <input type="submit" class="haveVerifyCode distributorVerifyCode haveVerifyCodeAll" data-member="distributor" value="获取验证码" disabled id="distributorVerifyCode"/>
+        </div>
+      </div>
+      <div class="submitBox">
+      <input type="submit" class="btn distributorBtn"  disabled value="立即注册" data-register="registerDistributor"/>
+      </div>
+      <!--用户协议-->
+      <div class="checkboxStyle">
+        <label class="my_protocol">
+          <input type="checkbox" checked class="input_agreement_protocol" id="distributorChecked">
+          <span></span>
+        </label>
+        <span>我已阅读并接受<a class="userTextStyle" href="userAgreement.html">《用户协议》</a></span>
+      </div>
+    </div>
+    <!--供应商-->
+    <div class="supplier">
+      <div class="mui-input-row">
+        <span class="titleText">供应商类型</span>
+        <div class="supplierSelectStyle">
+          <input type="text" class="inputStyle supplierType" placeholder="请选择供应商类型" readonly="readonly" value="国内供应商">
+          <span class="mui-icon mui-icon-arrowdown"></span>
+        </div>
+      </div>
+      <div class="domesticSuppliers">
+        <div class="mui-input-row">
+          <span class="titleText">手机号</span>
+          <input type="number" class="inputStyle domesticPhone" placeholder="请输入手机号码" oninput="domesticPhoneInput()">
+        </div>
+        <div class="mui-input-row">
+          <span class="titleText">短信验证码</span>
+          <div class="verifyCodeBox">
+            <input type="text" class="inputStyle domesticVerifyCodeInput verificationCode" placeholder="请输入短信验证码" oninput="domesticVerifyCodeInput()">
+            <input type="submit" class="haveVerifyCode domesticVerifyCode haveVerifyCodeAll" data-member="supplier"  value="获取验证码" disabled id="domesticVerifyCode"/>
+          </div>
+        </div>
+      </div>
+      <div class="registerOverseas">
+        <div class="mui-input-row">
+          <span class="titleText">邮箱</span>
+          <input type="text" class="inputStyle emailInput" placeholder="请输入邮箱" oninput="emailInput()">
+        </div>
+        <div class="mui-input-row">
+          <span class="titleText">邮箱验证码</span>
+          <div class="verifyCodeBox">
+            <input type="text" class="inputStyle emailVerifyCodeInput emailVerificationCode" placeholder="请输入邮箱验证码" oninput="emailVerifyCodeInput()">
+            <input type="submit" class="haveVerifyCode emailVerifyCode" value="获取验证码" disabled id="emailVerifyCode"/>
+          </div>
+        </div>
+      </div>
+      <div class="submitBox">
+        <input type="submit" class="btn supplierBtn" disabled value="立即注册" data-register="registerOverseas"/>
+      </div>
+      <!--用户协议-->
+      <div class="checkboxStyle">
+        <label class="my_protocol">
+          <input type="checkbox" checked class="input_agreement_protocol" id="supplierChecked">
+          <span></span>
+        </label>
+        <span>我已阅读并接受<a class="userTextStyle" href="supplierUserAgreement.html">《用户协议》</a></span>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
 <script src="../js/jquery-1.12.4.min.js"></script>
 <script src="../js/mui.min.js"></script>
+<script src="../js/picker.min.js"></script>
 <script src="../js/index.js"></script>
+<script>
+  //供应商类型
+  var picker = new Picker({
+    data: [
+      [
+        {
+          text:"国内供应商",
+          value:"国内供应商"
+        },
+        {
+          text:"海外供应商",
+          value:"海外供应商"
+        }
+      ]
+    ]
+  });
+  picker.on('picker.select', function(selectedVal, selectedIndex) {
+    $(".supplierSelectStyle .supplierType").val(selectedVal[0]);
+    if ( $(" .supplierType").val() === '国内供应商') {
+      $(".registerOverseas").hide();
+      $(".domesticSuppliers").show();
+    } else if ($(" .supplierType").val() === '海外供应商') {
+      $(".domesticSuppliers").hide();
+      $(".registerOverseas").show();
+    }
+
+  });
+  $(".supplierType").on("click",function () {
+    document.activeElement.blur();
+    picker.show();
+  })
+</script>
