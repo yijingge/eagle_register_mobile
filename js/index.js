@@ -107,7 +107,7 @@ function verificationCode(dataObj, $this) {
 
     $.ajax({
         type:"post",
-        url:"https://www2.feiying360.com/api/phone/sendPhoneVerifyCode",
+        url:"https://www.feiying360.com/api/phone/sendPhoneVerifyCode",
         contentType: "application/json; charset=utf-8",
         crossDomain: true,
         dataType:"json",
@@ -135,7 +135,7 @@ $(".emailVerifyCode").on("tap", function (e) {
     data.email = $(" .emailInput").val();
     $.ajax({
         type:"POST",
-        url:"https://www2.feiying360.com/api/phone/sendEmailVerifyCode",
+        url:"https://www.feiying360.com/api/phone/sendEmailVerifyCode",
         contentType:"application/json;charset=UTF-8",
         crossDomain: true,
         dataType:"json",
@@ -240,7 +240,7 @@ $(".submitBox .distributorBtn").on("tap",function (e) {
         canClickButton = true
         $.ajax({
             type: "POST",
-            url: "https://www2.feiying360.com/api/phone/member/register",
+            url: "https://www.feiying360.com/api/phone/member/register",
             contentType: "application/json;charset=UTF-8",
             crossDomain: true,
             dataType: "json",
@@ -308,7 +308,7 @@ $(".submitBox .supplierBtn").on("tap",function (e) {
         supplierCanClickButton = true
         $.ajax({
             type: "POST",
-            url: "https://www2.feiying360.com/api/phone/seller/register",
+            url: "https://www.feiying360.com/api/phone/seller/register",
             contentType: "application/json;charset=UTF-8",
             crossDomain: true,
             dataType: "json",
