@@ -3,7 +3,7 @@ html,body{
     font-family: PingFang-SC-Medium;
     font-weight: normal;
     color: #333333;
-    padding-top: 3.2rem;
+    padding-top: 1.8rem;
 }
 .successBox{
     width: 9.6rem;
@@ -25,7 +25,7 @@ html,body{
     font-size: 0.6rem;
     width: 10rem;
     margin: 0 auto;
-    margin-bottom: 3.72rem;
+    margin-bottom: 3rem;
 }
 .bigBanner{
     width: 12.4rem;

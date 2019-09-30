@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98f45ac6-b045-48e7-9805-4b455684ff28" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/registerSuccess.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/registerSuccess.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1404">
-              <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+            <state relative-caret-position="51">
+              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
               <folding>
                 <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -30,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="149">
@@ -42,8 +44,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="175" column="20" lean-forward="true" selection-start-line="175" selection-start-column="20" selection-end-line="175" selection-end-column="20" />
+            <state relative-caret-position="87">
+              <caret line="126" column="19" lean-forward="true" selection-start-line="126" selection-start-column="19" selection-end-line="126" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/registerSuccess.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -61,16 +72,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>flag</find>
-      <find>.checkboxDefault:checked + customCheckBox:after</find>
-      <find>emailVerifyCode</find>
-      <find>悠行定制旅游</find>
-      <find>body</find>
       <find>获取验证码</find>
       <find>verifyCodeBox</find>
       <find>btn</find>
       <find>haveVerifyCode</find>
-      <find>用户协议</find>
       <find>my_protocol</find>
       <find>.checkboxStyle</find>
       <find>input_agreement_protocol</find>
@@ -91,6 +96,12 @@
       <find>mui-icon</find>
       <find>.tabTop p</find>
       <find>www2</find>
+      <find>body</find>
+      <find>.customFrame .verifyCodeBox input[type=submit]:disabled</find>
+      <find>disabled</find>
+      <find>.picker .picker-panel .picker-choose.cancelAndConfirm</find>
+      <find>.successBox .smallText</find>
+      <find>用户协议</find>
     </findStrings>
     <replaceStrings>
       <replace>飞鹰云分销</replace>
@@ -110,17 +121,17 @@
         <option value="$PROJECT_DIR$/html/supplier.html" />
         <option value="$PROJECT_DIR$/html/distributor.html" />
         <option value="$PROJECT_DIR$/html/registerSuccess.html" />
-        <option value="$PROJECT_DIR$/css/registerSuccess.css" />
         <option value="$PROJECT_DIR$/css/userAgreement.css" />
         <option value="$PROJECT_DIR$/html/userAgreement.html" />
         <option value="$PROJECT_DIR$/html/supplierUserAgreement.html" />
+        <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/css/registerSuccess.css" />
         <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/css/index.css" />
-        <option value="$PROJECT_DIR$/js/index.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-132" />
     <option name="y" value="152" />
     <option name="width" value="1459" />
@@ -224,12 +235,12 @@
       <option name="presentableId" value="Default" />
       <updated>1569309996555</updated>
       <workItem from="1569309998239" duration="536000" />
-      <workItem from="1569310758143" duration="83642000" />
+      <workItem from="1569310758143" duration="88281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84178000" />
+    <option name="totallyTimeSpent" value="88817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -307,13 +318,6 @@
     <entry file="file://$PROJECT_DIR$/images/bigBanner.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/registerSuccess.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/icon_checkbox.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -358,27 +362,34 @@
     <entry file="file://$PROJECT_DIR$/images/icon_checkbox.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.html">
+    <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-          <folding>
-            <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="149">
+          <caret line="134" column="41" lean-forward="true" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/registerSuccess.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="175" column="20" lean-forward="true" selection-start-line="175" selection-start-column="20" selection-end-line="175" selection-end-column="20" />
+        <state relative-caret-position="87">
+          <caret line="126" column="19" lean-forward="true" selection-start-line="126" selection-start-column="19" selection-end-line="126" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
+    <entry file="file://$PROJECT_DIR$/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="134" column="41" lean-forward="true" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
+        <state relative-caret-position="51">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+          <folding>
+            <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

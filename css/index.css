@@ -61,7 +61,7 @@ body{
 }
 .customFrame .inputStyle{
     width: 16rem;
-    height: 1.14rem;
+    height: 1.58rem;
     border-bottom: 1px solid #e8e8e8;
     border-radius: 0;
     margin-bottom: 0.8rem;
@@ -75,14 +75,14 @@ body{
     height: 1.28rem;
     position: absolute;
     right: 0;
-    top: -0.48rem;
+    top: -0.3rem;
 }
 input[type=submit]:disabled{
-    background: #dcdcdc;
+    background: #ccc;
     border: none;
 }
 .customFrame .verifyCodeBox input[type=submit]:disabled{
-    background: #dcdcdc;
+    background: #ccc;
     border: none;
 }
 input[type=submit]{
@@ -132,7 +132,7 @@ input[type=submit]{
 .supplierSelectStyle span{
     position: absolute;
     right: 0;
-    top: 0.24rem;
+    top: 0.16rem;
 }
 .registerOverseas{
     display: none;
@@ -140,10 +140,21 @@ input[type=submit]{
 .mui-toast-container {bottom: 50% !important;}
 /*修改picker样式开始*/
 .picker .picker-panel .picker-choose.cancelAndConfirm {
-    background-color: transparent;
+    background-color: #3f6694 !important;
 }
 .picker {
     z-index: 9999!important;
+}
+.picker .picker-panel .picker-choose .cancel, .picker .picker-panel .picker-choose .confirm{
+    position: absolute;
+    padding: 10px 16px 10px 16px !important;
+    top: 0px !important;
+}
+.picker .picker-panel .picker-choose .picker-title{
+    display: none !important;
+}
+.picker .picker-panel .picker-choose{
+    height: 40px !important;
 }
 /*.picker .picker-panel .wheel-wrapper .wheel .wheel-scroll{*/
     /*margin-top: 0.72rem !important;*/
@@ -188,7 +199,7 @@ input[type=submit]{
     background-position: 0 0px
 }
 .mui-icon-arrowdown:before{
-    color: #333 !important;
+    color: #666 !important;
 }
 .registerTextStyle .selected{
     position: relative;
