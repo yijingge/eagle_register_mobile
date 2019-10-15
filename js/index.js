@@ -248,7 +248,8 @@ $(".submitBox .distributorBtn").on("tap",function (e) {
             success: function (res) {
                 canClickButton = false
                 if (res.code == 0) {
-                    $("input").val("");
+                    $("input[type = 'text']").val("");
+                    $("#domesticVerifyCode")[0].value = '获取验证码';
                     window.location.href = 'registerSuccess.html';
                 } else {
                     mui.toast(res.msg)
@@ -316,8 +317,10 @@ $(".submitBox .supplierBtn").on("tap",function (e) {
             success: function (res) {
                 supplierCanClickButton = false
                 if (res.code == 0) {
-                    $("input").val("");
-                    $(" .supplierType").val() === '国内供应商'
+                    $("input[type = 'text']").val("");
+                    $(" .supplierType").val('国内供应商')
+                    $("#distributorVerifyCode")[0].value = '获取验证码';
+                    $("#emailVerifyCode")[0].value = '获取验证码';
                     window.location.href = 'registerSuccess.html';
                 } else {
                     mui.toast(res.msg)
